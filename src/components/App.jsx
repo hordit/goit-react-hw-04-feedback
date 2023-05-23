@@ -5,7 +5,6 @@ import { Layout } from './Layout';
 import { Notification } from './Notification/Notification';
 import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
-import PropTypes from 'prop-types';
 
 const INITIAL_STATE = {
   good: 0,
@@ -55,10 +54,3 @@ export const App = () => {
   );
 };
 
-App.propTypes = {
-  feedback: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-  }).isRequired,
-};
